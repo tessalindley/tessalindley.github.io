@@ -1,0 +1,35 @@
+@import './_reset';
+@import './_grid';
+@import './_colors';
+@import './_utilities';
+@import './_layout';
+
+body{
+    background-color: $light;
+}
+
+a{
+    color: $dark;
+
+    &:hover{
+        opacity: 0.7;
+    }
+}
+
+main > .row{
+    min-height: 100vh;
+}
+
+.social-media{
+    font-size: 3rem;
+
+    >a{
+        padding: 0 10px;
+        color: $light;
+
+
+        &:hover{
+            color: $mid;
+        }
+    }
+}
