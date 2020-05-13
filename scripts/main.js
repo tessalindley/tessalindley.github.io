@@ -3,13 +3,13 @@ document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('mobile-menu-close').addEventListener('click', toggleMobileNav);
 
     // Sticky Header
-    window.onscroll = function () {
-        addStickyHeader();
-    };
+    // window.onscroll = function () {
+    //     addStickyHeader();
+    // };
 
-    window.onload = function () {
-        addStickyHeader();
-    };
+    // window.onload = function () {
+    //     addStickyHeader();
+    // };
     var header = document.querySelector("header");
     // Get the offset position of the navbar
     var sticky = 0;

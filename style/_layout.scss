@@ -2,9 +2,9 @@
 
 // Header
 header {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0px;
+    // position: -webkit-sticky;
+    // position: sticky;
+    // top: 0px;
     margin-bottom: -70px;
     z-index: 1;
     transition: background-color 300ms ease;
@@ -36,7 +36,14 @@ header {
 
     #logo {
         justify-content: center;
-        padding: 10px;
+        padding: 0 30px;
+
+        h1 {
+            color: $dark;
+            font-family: utopia-std-subhead, serif;
+            font-weight: 700;
+        }
+
     }
 
     nav {
@@ -90,6 +97,37 @@ main {
 #footer {
     background-color: $dark;
     color: $light;
+
+    a {
+        padding: 5px 15px;
+        color: $light;
+    }
+
+    >div {
+        padding: 20px 0;
+        border-right: 1px solid $light;
+
+        &:last-child {
+            border-right-width: 0px;
+        }
+
+    }
+
+    ul {
+
+        li {
+            margin-bottom: 1em;
+
+            &:last-child {
+                margin: 0;
+            }
+        }
+    }
+
+    hr {
+        display: none;
+    }
+
     justify-content: center;
 }
 
@@ -155,6 +193,17 @@ main {
                     }
                 }
             }
+        }
+    }
+
+    #footer {
+        >div {
+            border: 0px;
+        }
+
+        hr {
+            display: initial;
+            width: 25%;
         }
     }
 }
